@@ -10,7 +10,6 @@ import Login from './component/login'
 import NavBar from './component/navBar'
 import NotFound from './component/not-found'
 import Posts from './component/posts'
-import Stats from './component/stats'
 import TestRender from './component/test-render'
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
       <h1>App</h1>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/dashboard/stats" component={Stats} />
         <Route path="/dashboard" component={Dashboard} />
         <Route
           path="/test-render"

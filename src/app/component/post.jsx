@@ -1,14 +1,14 @@
 import React from 'react'
-
-const Post = ({ id, posts, history }) => {
+import { useHistory } from 'react-router-dom'
+const Post = ({ id, posts }) => {
   // const postId = match.params.postId
-
+  const history = useHistory()
   const getPostById = (id) => {
     return posts.find((post) => (post.id.toString() === id))
   }
   const handleSave = () => {
-    // history.push('/posts')
-    history.replace('/posts')
+    history.push('/posts')
+    // history.replace('/posts')
 
   }
   const post = getPostById(id)
